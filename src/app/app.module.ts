@@ -14,6 +14,7 @@ import { HelpComponent } from './pages/help/help.component';
 import { SearchComponent } from './pages/search/search.component';
 import { CartShopComponent } from './pages/cart-shop/cart-shop.component';
 import { MyShopsComponent } from './pages/my-shops/my-shops.component';
+import { CategoriesComponent } from './pages/categories/categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MyShopsComponent } from './pages/my-shops/my-shops.component';
     HelpComponent,
     SearchComponent,
     CartShopComponent,
-    MyShopsComponent
+    MyShopsComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
