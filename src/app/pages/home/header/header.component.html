@@ -65,7 +65,10 @@
       <div class="flex flex-col">
         <div class="flex justify-between text-gray-500">
           <p class="">Categorías</p>
-          <button class="text-xs" (click)="navigateToCategories()">
+          <button
+            class="text-xs text-orange-600"
+            (click)="navigateToCategories()"
+          >
             Ver todas
           </button>
         </div>
@@ -125,7 +128,7 @@
           <h3 class="font-bold">Nueva Colección</h3>
           <p>Descuento del 50% para tu primer transacción</p>
           <button
-            class="bg-orange-400 text-white rounded-full py-1 drop-shadow shadow"
+            class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
           >
             Comprar ahora
           </button>
@@ -158,7 +161,7 @@
             <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
               <p class="font-semibold">$31, 499.83</p>
               <button
-                class="bg-orange-400 text-white rounded-full py-1 drop-shadow shadow"
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
               >
                 Comprar
               </button>
@@ -182,7 +185,7 @@
             <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
               <p class="font-semibold">$31, 499.83</p>
               <button
-                class="bg-orange-400 text-white rounded-full py-1 drop-shadow shadow"
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
               >
                 Comprar
               </button>
@@ -206,7 +209,7 @@
             <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
               <p class="font-semibold">$31, 499.83</p>
               <button
-                class="bg-orange-400 text-white rounded-full py-1 drop-shadow shadow"
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
               >
                 Comprar
               </button>
@@ -244,7 +247,10 @@
         <div
           class="border-t border-x-gray-400 text-left w-full justify-start py-4"
         >
-          <button class="text-orange-600 flex w-full justify-between">
+          <button
+            class="text-orange-600 flex w-full justify-between"
+            (click)="navigateToOffers()"
+          >
             Ver todas las ofertas<i class="fa-solid fa-angle-right"></i>
           </button>
         </div>

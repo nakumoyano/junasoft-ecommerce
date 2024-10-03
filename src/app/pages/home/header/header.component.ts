@@ -60,6 +60,13 @@ export class HeaderComponent implements OnInit {
     }, 200);
   }
 
+  navigateToOffers() {
+    this.router.navigate(['/ofertas']);
+    setTimeout(() => {
+      location.reload();
+    }, 200);
+  }
+
   setupInfiniteScroll(): void {
     const carousel = document.getElementById('carousel');
 

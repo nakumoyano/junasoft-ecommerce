@@ -1,0 +1,304 @@
+<nav class="fixed top-0 w-full z-50 bg-orange-400">
+  <div class="px-3 py-1 lg:px-5 lg:pl-3">
+    <div class="flex items-center justify-between">
+      <!-- NAVEGADOR -->
+      <div class="flex flex-col gap-4 w-full my-4">
+        <div class="flex left-2 items-center w-full p-0 mx-0">
+          <button
+            class="text-black px-3 drop-shadow rounded mr-2"
+            (click)="navigateToHome()"
+          >
+            <i class="fa-solid fa-angle-left text-2xl"></i>
+          </button>
+          <h3 class="text-black font-bold uppercase">ofertas</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- TITULO -->
+<div class="flex w-full bg-white drop-shadow shadow p-4 mt-16 items-center">
+  <p class="text-base text-gray-500">10000 productos</p>
+</div>
+
+<div class="grid grid-cols-12 gap-4 mt-10">
+  <div class="lg:col-span-8 sm:col-span-12" id="dashboard">
+    <div class="lg:ml-32 md:ml-56 lg:mx-0 md:mx-0 sm:mx-2">
+      <!-- TABS -->
+      <div class="text-sm font-medium text-center mb-4">
+        <ul class="grid grid-cols-3 justify-around">
+          <!-- TODAS LAS OFERTAS -->
+          <li
+            class="me-2 flex flex-col gap-4 rounded-lg py-6 px-4 bg-white shadow drop-shadow"
+            (click)="selectTab('todas')"
+            [ngClass]="{
+              'text-black border-b-4 border-orange-600': activeTab === 'todas',
+              'text-gray-500 ': activeTab !== 'todas'
+            }"
+          >
+            <i class="fa-solid fa-tags text-4xl text-orange-600"></i>
+            <p class="inline-block text-sm rounded-full">Todas las ofertas</p>
+          </li>
+
+          <!-- OFERTAS RELAMPAGO -->
+          <li
+            class="me-2 flex flex-col gap-4 rounded-lg text-gray-500 py-6 px-4 bg-white shadow drop-shadow"
+            (click)="selectTab('relampago')"
+            [ngClass]="{
+              'text-black border-b-4 border-orange-600':
+                activeTab === 'relampago',
+              'text-gray-500 ': activeTab !== 'relampago'
+            }"
+          >
+            <i class="fa-solid fa-bolt-lightning text-4xl text-orange-600"></i>
+            <p class="inline-block text-sm rounded-full">Ofertas relámpagos</p>
+          </li>
+          <!-- OFERTAS ESPECIALES -->
+          <li
+            class="me-2 flex flex-col gap-4 rounded-lg text-gray-500 py-6 px-4 bg-white shadow drop-shadow"
+            (click)="selectTab('especiales')"
+            [ngClass]="{
+              'text-black border-b-4 border-orange-600':
+                activeTab === 'especiales',
+              'text-gray-500 ': activeTab !== 'especiales'
+            }"
+          >
+            <i
+              class="fa-solid fa-fire-flame-curved text-4xl text-orange-600"
+            ></i>
+            <p class="inline-block text-sm rounded-full">Ofertas especiales</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- TAB TDODAS -->
+      <div class="grid grid-cols-1 gap-4 mb-4" *ngIf="activeTab === 'todas'">
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT79lHHTrboodJ4gGxqEo3PkscwSbMYOmsWJl6m2kNhEGmh9QImys-kWErxKAms2Nfaequn-Vx9o02kA0CplpWiVUTMeNbgRrMqwFUBdLqP0k8wi6tJLYJ0lw&usqp=CAE"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT79lHHTrboodJ4gGxqEo3PkscwSbMYOmsWJl6m2kNhEGmh9QImys-kWErxKAms2Nfaequn-Vx9o02kA0CplpWiVUTMeNbgRrMqwFUBdLqP0k8wi6tJLYJ0lw&usqp=CAE"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT79lHHTrboodJ4gGxqEo3PkscwSbMYOmsWJl6m2kNhEGmh9QImys-kWErxKAms2Nfaequn-Vx9o02kA0CplpWiVUTMeNbgRrMqwFUBdLqP0k8wi6tJLYJ0lw&usqp=CAE"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TAB RELAMPAGO -->
+      <div
+        class="grid grid-cols-1 gap-4 mb-4"
+        *ngIf="activeTab === 'relampago'"
+      >
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://pardohogar.vtexassets.com/arquivos/ids/185932/Celular-Samsung-Galaxy-A23-5G-128GB-50MP-Negro-1.jpg?v=638132074354770000"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://pardohogar.vtexassets.com/arquivos/ids/185932/Celular-Samsung-Galaxy-A23-5G-128GB-50MP-Negro-1.jpg?v=638132074354770000"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://pardohogar.vtexassets.com/arquivos/ids/185932/Celular-Samsung-Galaxy-A23-5G-128GB-50MP-Negro-1.jpg?v=638132074354770000"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- TAB ESPECIALES -->
+      <div
+        class="grid grid-cols-1 gap-4 mb-4"
+        *ngIf="activeTab === 'especiales'"
+      >
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://www.digitalsport.com.ar/files/products/613b753769044-501907-500x500.jpg"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://www.digitalsport.com.ar/files/products/613b753769044-501907-500x500.jpg"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://www.digitalsport.com.ar/files/products/613b753769044-501907-500x500.jpg"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-600 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div
+    class="h-full flex flex-col gap-y-4 rounded-lg lg:block md:hidden sm:hidden mt-4"
+  >
+    <app-panel-right></app-panel-right>
+  </div> -->
+</div>

@@ -15,6 +15,7 @@ import { SearchComponent } from './pages/search/search.component';
 import { CartShopComponent } from './pages/cart-shop/cart-shop.component';
 import { MyShopsComponent } from './pages/my-shops/my-shops.component';
 import { CategoriesComponent } from './pages/categories/categories/categories.component';
+import { OffersComponent } from './pages/offers/offers/offers.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CategoriesComponent } from './pages/categories/categories/categories.co
     SearchComponent,
     CartShopComponent,
     MyShopsComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    OffersComponent
   ],
   imports: [
     BrowserModule,
