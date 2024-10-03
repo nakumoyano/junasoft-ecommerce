@@ -53,6 +53,13 @@ export class HeaderComponent implements OnInit {
     }, 200);
   }
 
+  navigateToCategories() {
+    this.router.navigate(['/categorias']);
+    setTimeout(() => {
+      location.reload();
+    }, 200);
+  }
+
   setupInfiniteScroll(): void {
     const carousel = document.getElementById('carousel');
 

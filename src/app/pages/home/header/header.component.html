@@ -1,4 +1,4 @@
-<div class="grid grid-cols-12 gap-4 mt-[75px]">
+<div class="grid grid-cols-12 gap-4 my-[75px]">
   <app-sidebar-web></app-sidebar-web>
   <div class="lg:col-span-8 sm:col-span-12" id="dashboard">
     <div class="lg:ml-32 md:ml-56 lg:mx-0 md:mx-0 sm:mx-2">
@@ -51,6 +51,7 @@
         </div>
       </div>
 
+      <!-- ENVIO GRATIS -->
       <div
         class="flex w-full gap-2 my-4 items-center bg-white rounded-lg px-4 py-2"
       >
@@ -60,50 +61,192 @@
         </p>
       </div>
 
-      <div class="carousel-wrapper2 overflow-hidden relative mt-2 py-1">
-        <div class="carousel2 flex">
-          <div class="item items-center flex flex-col gap-2">
-            <i
-              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
-            ></i>
-            <p class="text-gray-500 text-xs">Ofertas</p>
+      <!-- CATEGORIAS -->
+      <div class="flex flex-col">
+        <div class="flex justify-between text-gray-500">
+          <p class="">Categorías</p>
+          <button class="text-xs" (click)="navigateToCategories()">
+            Ver todas
+          </button>
+        </div>
+        <div class="carousel-wrapper2 overflow-hidden relative mt-2 py-1">
+          <div class="carousel2 flex">
+            <div class="item items-center flex flex-col gap-2">
+              <i
+                class="fa-solid fa-tags bg-orange-200 text-orange-600 drop-shadow shadow rounded-full p-2"
+              ></i>
+              <p class="text-gray-500 text-xs">Ofertas</p>
+            </div>
+            <div class="item items-center flex flex-col gap-2">
+              <i
+                class="fa-solid fa-phone bg-orange-200 text-orange-600 drop-shadow shadow rounded-full p-2"
+              ></i>
+              <p class="text-gray-500 text-xs">Celulares</p>
+            </div>
+            <div class="item items-center flex flex-col gap-2">
+              <i
+                class="fa-solid fa-shirt bg-orange-200 text-orange-600 drop-shadow shadow rounded-full p-2"
+              ></i>
+              <p class="text-gray-500 text-xs">Moda</p>
+            </div>
+            <div class="item items-center flex flex-col gap-2">
+              <i
+                class="fa-solid fa-car bg-orange-200 text-orange-600 drop-shadow shadow rounded-full p-2"
+              ></i>
+              <p class="text-gray-500 text-xs">Vehículos</p>
+            </div>
+            <div class="item items-center flex flex-col gap-2">
+              <i
+                class="fa-solid fa-computer bg-orange-200 text-orange-600 drop-shadow shadow rounded-full p-2"
+              ></i>
+              <p class="text-gray-500 text-xs">Computación</p>
+            </div>
+            <div class="item items-center flex flex-col gap-2">
+              <i
+                class="fa-solid fa-tv-alt bg-orange-200 text-orange-600 drop-shadow shadow rounded-full p-2"
+              ></i>
+              <p class="text-gray-500 text-xs">Televisores</p>
+            </div>
+            <div class="item items-center flex flex-col gap-2">
+              <i
+                class="fa-solid fa-home bg-orange-200 text-orange-600 drop-shadow shadow rounded-full p-2"
+              ></i>
+              <p class="text-gray-500 text-xs">Hogar</p>
+            </div>
           </div>
-          <div class="item items-center flex flex-col gap-2">
-            <i
-              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
-            ></i>
-            <p class="text-gray-500 text-xs">Celulares</p>
+        </div>
+      </div>
+
+      <!-- CARD DE NUEVA COLECCION -->
+      <div
+        class="grid grid-cols-2 w-full h-44 gap-2 my-4 items-center bg-orange-100 rounded-lg px-4 py-2"
+      >
+        <div class="flex flex-col gap-2">
+          <h3 class="font-bold">Nueva Colección</h3>
+          <p>Descuento del 50% para tu primer transacción</p>
+          <button
+            class="bg-orange-400 text-white rounded-full py-1 drop-shadow shadow"
+          >
+            Comprar ahora
+          </button>
+        </div>
+        <div class="flex justify-end">
+          <img src="./assets/header/moda.png" alt="" class="h-40" />
+        </div>
+      </div>
+
+      <!-- PRODUCTOS -->
+      <div class="flex flex-col w-full gap-2">
+        <!-- TITULO -->
+        <div class="flex justify-between text-gray-500">
+          <p class="">Productos</p>
+        </div>
+        <!-- ZAPAS 1 -->
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT79lHHTrboodJ4gGxqEo3PkscwSbMYOmsWJl6m2kNhEGmh9QImys-kWErxKAms2Nfaequn-Vx9o02kA0CplpWiVUTMeNbgRrMqwFUBdLqP0k8wi6tJLYJ0lw&usqp=CAE"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
           </div>
-          <div class="item items-center flex flex-col gap-2">
-            <i
-              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
-            ></i>
-            <p class="text-gray-500 text-xs">Moda</p>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-400 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
           </div>
-          <div class="item items-center flex flex-col gap-2">
-            <i
-              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
-            ></i>
-            <p class="text-gray-500 text-xs">Vehículos</p>
+        </div>
+        <!-- ZAPAS 2 -->
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://www.stockcenter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwff8bc75a/products/ADIH4864/ADIH4864-1.JPG"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
           </div>
-          <div class="item items-center flex flex-col gap-2">
-            <i
-              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
-            ></i>
-            <p class="text-gray-500 text-xs">Computación</p>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Zapatillas adidas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-400 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
           </div>
-          <div class="item items-center flex flex-col gap-2">
-            <i
-              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
-            ></i>
-            <p class="text-gray-500 text-xs">Televisores</p>
+        </div>
+        <!-- ZAPAS 3 -->
+        <div
+          class="grid grid-cols-2 w-full h-44 bg-white gap-2 items-center drop-shadow shadow p-2 border rounded-lg"
+        >
+          <div class="flex justify-end">
+            <img
+              src="https://www.stockcenter.com.ar/on/demandware.static/-/Sites-365-dabra-catalog/default/dwf0ea797b/products/AS1011B693400/AS1011B693400-1.JPG"
+              alt=""
+              class="h-40 w-full rounded object-cover py-2"
+            />
           </div>
-          <div class="item items-center flex flex-col gap-2">
-            <i
-              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
-            ></i>
-            <p class="text-gray-500 text-xs">Hogar</p>
+          <div class="flex flex-col gap-2">
+            <p class="font-bold text-lg">Vans Zapatillas</p>
+            <small>Las Vans Old Skool, repensadas...</small>
+            <div class="grid grid-cols-2 w-full items-center gap-2 text-sm">
+              <p class="font-semibold">$31, 499.83</p>
+              <button
+                class="bg-orange-400 text-white rounded-full py-1 drop-shadow shadow"
+              >
+                Comprar
+              </button>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <!-- OFERTA DEL DIA -->
+      <div
+        class="flex flex-col w-full gap-2 my-4 items-center bg-white rounded-lg px-4"
+      >
+        <div
+          class="border-b border-x-gray-400 text-left w-full justify-start py-4"
+        >
+          <h3 class="font-bold">Oferta del día</h3>
+        </div>
+        <div class="flex justify-end">
+          <img
+            src="https://http2.mlstatic.com/D_NQ_NP_679173-MLU78381109839_082024-O.webp"
+            alt=""
+            class="h-60 w-full"
+          />
+        </div>
+        <div class="flex flex-col gap-2 w-full">
+          <p>Hidrolavadora Electrica Trent HLT307 1400W</p>
+          <p>Alta Presion 1600 Psi 110 Bar con Accesorios</p>
+          <div class="flex flex-col">
+            <small class="line-through">$160.000</small>
+            <h2 class="font-bold">$98.999</h2>
+            <small class="">en 6 cuotas de $22.933</small>
+          </div>
+          <p class="text-green-600">Envío gratis</p>
+        </div>
+        <div
+          class="border-t border-x-gray-400 text-left w-full justify-start py-4"
+        >
+          <button class="text-orange-600 flex w-full justify-between">
+            Ver todas las ofertas<i class="fa-solid fa-angle-right"></i>
+          </button>
         </div>
       </div>
     </div>
