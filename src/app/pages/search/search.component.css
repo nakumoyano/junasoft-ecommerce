@@ -1,4 +1,0 @@
-.no-background {
-    filter: brightness(0) invert(1);
-    /* Esto invierte los colores y puede ocultar el fondo, pero alterará la imagen */
-}
