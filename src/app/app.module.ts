@@ -13,6 +13,7 @@ import { MyProfileComponent } from './configuration/my-profile/my-profile.compon
 import { HelpComponent } from './pages/help/help.component';
 import { SearchComponent } from './pages/search/search.component';
 import { CartShopComponent } from './pages/cart-shop/cart-shop.component';
+import { MyShopsComponent } from './pages/my-shops/my-shops.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CartShopComponent } from './pages/cart-shop/cart-shop.component';
     MyProfileComponent,
     HelpComponent,
     SearchComponent,
-    CartShopComponent
+    CartShopComponent,
+    MyShopsComponent
   ],
   imports: [
     BrowserModule,
