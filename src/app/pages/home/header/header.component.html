@@ -1,0 +1,116 @@
+<div class="grid grid-cols-12 gap-4 mt-16">
+  <app-sidebar-web></app-sidebar-web>
+  <div class="lg:col-span-8 sm:col-span-12" id="dashboard">
+    <div class="lg:ml-32 md:ml-56 lg:mx-0 md:mx-0 sm:mx-2">
+      <!-- CAROUSEL -->
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-40 overflow-hidden rounded-lg">
+          <!-- Item 1 -->
+          <div
+            class="hidden duration-700 ease-in-out h-full"
+            data-carousel-item
+          >
+            <img
+              src="https://http2.mlstatic.com/D_NQ_792867-MLA79456703016_102024-OO.webp"
+              class="zoom absolute h-full w-full object-cover"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out h-full"
+            data-carousel-item="active"
+          >
+            <img
+              src="https://http2.mlstatic.com/D_NQ_675956-MLA79442426678_102024-OO.webp"
+              class="zoom absolute h-full w-full object-cover"
+              alt="..."
+            />
+          </div>
+        </div>
+
+        <!-- Slider indicators -->
+        <div
+          class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+        >
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="true"
+            aria-label="Slide 1"
+            data-carousel-slide-to="0"
+          ></button>
+          <button
+            type="button"
+            class="w-3 h-3 rounded-full"
+            aria-current="false"
+            aria-label="Slide 2"
+            data-carousel-slide-to="1"
+          ></button>
+        </div>
+      </div>
+
+      <div
+        class="flex w-full gap-2 my-4 items-center bg-white rounded px-4 py-2"
+      >
+        <i class="fa-solid fa-truck-fast text-orange-600"></i>
+        <p>
+          <span class="text-orange-600">Envío gratis</span> desde los $15.000.
+        </p>
+      </div>
+
+      <div class="carousel-wrapper2 overflow-hidden relative mt-2 py-1">
+        <div class="carousel2 flex">
+          <div class="item items-center flex flex-col gap-2">
+            <i
+              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
+            ></i>
+            <p class="text-gray-500 text-xs">Ofertas</p>
+          </div>
+          <div class="item items-center flex flex-col gap-2">
+            <i
+              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
+            ></i>
+            <p class="text-gray-500 text-xs">Celulares</p>
+          </div>
+          <div class="item items-center flex flex-col gap-2">
+            <i
+              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
+            ></i>
+            <p class="text-gray-500 text-xs">Moda</p>
+          </div>
+          <div class="item items-center flex flex-col gap-2">
+            <i
+              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
+            ></i>
+            <p class="text-gray-500 text-xs">Vehículos</p>
+          </div>
+          <div class="item items-center flex flex-col gap-2">
+            <i
+              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
+            ></i>
+            <p class="text-gray-500 text-xs">Computación</p>
+          </div>
+          <div class="item items-center flex flex-col gap-2">
+            <i
+              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
+            ></i>
+            <p class="text-gray-500 text-xs">Televisores</p>
+          </div>
+          <div class="item items-center flex flex-col gap-2">
+            <i
+              class="fa-solid fa-ticket bg-white drop-shadow shadow rounded-full p-2"
+            ></i>
+            <p class="text-gray-500 text-xs">Hogar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div
+    class="h-full flex flex-col gap-y-4 rounded-lg lg:block md:hidden sm:hidden mt-4"
+  >
+    <app-panel-right></app-panel-right>
+  </div> -->
+</div>

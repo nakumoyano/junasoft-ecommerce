@@ -1,0 +1,145 @@
+<!-- <app-sidebar-web></app-sidebar-web> -->
+<div
+  class="max-w-screen-md flex flex-wrap items-center justify-center mx-auto relative"
+>
+  <!-- BOTONES DE VOLVER -->
+  <div class="flex absolute top-5 w-full z-50">
+    <!-- BOTON VOLVER -->
+    <div class="flex absolute left-2 top-0 items-center">
+      <button
+        class="text-black px-3 drop-shadow rounded mr-4"
+        (click)="navigateToHome()"
+      >
+        <i class="fa-solid fa-angle-left text-2xl"></i>
+      </button>
+      <h3 class="text-black font-bold">AYUDA</h3>
+    </div>
+  </div>
+  <div class="flex flex-col w-full mt-20 py-4 px-2">
+    <!-- buscador -->
+    <form action="" class="flex flex-col w-full gap-y-6">
+      <h2>¿Con qué podemos ayudarte?</h2>
+      <div class="flex gap-x-2">
+        <input
+          type="search"
+          id="default-search"
+          class="block w-full px-2 text-sm text-gray-900 border rounded-lg bg-gray-50 focus:outline-blue-500"
+          placeholder="Busca la ayuda que necesites"
+          required
+        />
+        <button
+          class="bg-blue-200 hover:bg-blue-300 px-6 py-3 rounded-lg text-blue-500 hover:text-blue-600 font-bold"
+        >
+          Buscar
+        </button>
+      </div>
+    </form>
+    <!-- compras -->
+    <div class="my-6 flex flex-col gap-y-3">
+      <h3 class="text-lg text-gray-600 font-bold">Compras</h3>
+      <div class="flex flex-col border rounded-lg bg-white drop-shadow shadow">
+        <div
+          class="flex items-center justify-between p-4 border-b hover:bg-gray-200/60 hover:cursor-pointer hover:border-l-2 hover:border-l-blue-500"
+        >
+          <div class="flex items-center gap-x-4">
+            <i class="fa-solid fa-bag-shopping text-2xl text-orange-500"></i>
+            <div class="flex flex-col">
+              <p class="font-bold">Administrar y cancelar compras</p>
+              <small
+                >Pagar, seguir envíos, modificar, reclamar o cancelar
+                compras.</small
+              >
+            </div>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div
+          class="flex items-center justify-between p-4 border-b hover:bg-gray-200/60 hover:cursor-pointer hover:border-l-2 hover:border-l-blue-500"
+        >
+          <div class="flex items-center gap-x-4">
+            <i
+              class="fa-solid fa-arrow-rotate-left text-2xl text-orange-500"
+            ></i>
+            <div class="flex flex-col">
+              <p class="font-bold">Devoluciones y reembolsos</p>
+              <small
+                >Devolver un producto o consultar por reintegros de dinero de
+                una compra.</small
+              >
+            </div>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div
+          class="flex items-center justify-between p-4 border-b hover:bg-gray-200/60 hover:cursor-pointer hover:border-l-2 hover:border-l-blue-500"
+        >
+          <div class="flex items-center gap-x-4">
+            <i class="fa-solid fa-question text-2xl text-orange-500"></i>
+            <div class="flex flex-col">
+              <p class="font-bold">Preguntas frecuentes sobre compras</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+    <!-- ventas -->
+    <div class="my-6 flex flex-col gap-y-3">
+      <h3 class="text-lg text-gray-600 font-bold">Ventas</h3>
+      <div class="flex flex-col border rounded-lg bg-white drop-shadow shadow">
+        <div
+          class="flex items-center justify-between p-4 border-b hover:bg-gray-200/60 hover:cursor-pointer hover:border-l-2 hover:border-l-blue-500"
+        >
+          <div class="flex items-center gap-x-4">
+            <i class="fa-solid fa-money-bill text-2xl text-orange-500"></i>
+            <div class="flex flex-col">
+              <p class="font-bold">Gestionar ventas y publicaciones</p>
+              <small
+                >Ventas, cobros, envíos, reclamos, devoluciones, publicaciones y
+                reputación.</small
+              >
+            </div>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div
+          class="flex items-center justify-between p-4 border-b hover:bg-gray-200/60 hover:cursor-pointer hover:border-l-2 hover:border-l-blue-500"
+        >
+          <div class="flex items-center gap-x-4">
+            <i class="fa-solid fa-question text-2xl text-orange-500"></i>
+            <div class="flex flex-col">
+              <p class="font-bold">Preguntas frecuentes sobre ventas</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+    <!-- sobre tu cuenta -->
+    <div class="my-6 flex flex-col gap-y-3">
+      <h3 class="text-lg text-gray-600 font-bold">Ayuda sobre tu cuenta</h3>
+      <div class="flex flex-col border rounded-lg bg-white drop-shadow shadow">
+        <div
+          class="flex items-center justify-between p-4 border-b hover:bg-gray-200/60 hover:cursor-pointer hover:border-l-2 hover:border-l-blue-500"
+        >
+          <div class="flex items-center gap-x-4">
+            <div class="flex flex-col">
+              <p class="">Configuración de mi cuenta</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div
+          class="flex items-center justify-between p-4 border-b hover:bg-gray-200/60 hover:cursor-pointer hover:border-l-2 hover:border-l-blue-500"
+        >
+          <div class="flex items-center gap-x-4">
+            <div class="flex flex-col">
+              <p class="">Seguridad</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
