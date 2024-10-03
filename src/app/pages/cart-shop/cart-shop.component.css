@@ -1,0 +1,15 @@
+/* PRINCIPIANTE ABDOMINALES*/
+.card-principiante-abdominales {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://www.lanacion.com.ar/resizer/v2/un-par-de-tips-para-tener-abdominales-sanos-y-CXYRJ7VA6FD5RGVOVIFF3L5OSM.jpg?auth=7ba35bc6f89cc2e88673cd22c4ddc04731654fbbda46f88be53297fd23fbe912&width=420&height=280&quality=70&smart=true);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    padding: 0px;
+    background-position: center;
+}

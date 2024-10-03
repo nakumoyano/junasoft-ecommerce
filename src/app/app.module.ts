@@ -12,6 +12,7 @@ import { HeaderComponent } from './pages/home/header/header.component';
 import { MyProfileComponent } from './configuration/my-profile/my-profile.component';
 import { HelpComponent } from './pages/help/help.component';
 import { SearchComponent } from './pages/search/search.component';
+import { CartShopComponent } from './pages/cart-shop/cart-shop.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SearchComponent } from './pages/search/search.component';
     HeaderComponent,
     MyProfileComponent,
     HelpComponent,
-    SearchComponent
+    SearchComponent,
+    CartShopComponent
   ],
   imports: [
     BrowserModule,

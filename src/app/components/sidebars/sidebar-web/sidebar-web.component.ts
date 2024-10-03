@@ -37,6 +37,13 @@ export class SidebarWebComponent implements OnInit {
     }, 200);
   }
 
+  navigateToCartShopping() {
+    this.router.navigate(['/carrito-de-compras']);
+    setTimeout(() => {
+      location.reload();
+    }, 200);
+  }
+
   toggleDropdown(id: string): void {
     this.dropdownStates[id] = !this.dropdownStates[id];
   }

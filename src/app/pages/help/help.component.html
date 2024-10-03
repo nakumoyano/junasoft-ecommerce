@@ -1,20 +1,26 @@
 <!-- <app-sidebar-web></app-sidebar-web> -->
+<nav class="fixed top-0 w-full z-50 bg-orange-400">
+  <div class="px-3 py-1 lg:px-5 lg:pl-3">
+    <div class="flex items-center justify-between">
+      <!-- NAVEGADOR -->
+      <div class="flex flex-col gap-4 w-full my-4">
+        <div class="flex left-2 items-center w-full p-0 mx-0">
+          <button
+            class="text-black px-3 drop-shadow rounded mr-2"
+            (click)="navigateToHome()"
+          >
+            <i class="fa-solid fa-angle-left text-2xl"></i>
+          </button>
+          <h3 class="text-black font-bold uppercase">ayuda</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
 <div
   class="max-w-screen-md flex flex-wrap items-center justify-center mx-auto relative"
 >
-  <!-- BOTONES DE VOLVER -->
-  <div class="flex absolute top-5 w-full z-50">
-    <!-- BOTON VOLVER -->
-    <div class="flex absolute left-2 top-0 items-center">
-      <button
-        class="text-black px-3 drop-shadow rounded mr-4"
-        (click)="navigateToHome()"
-      >
-        <i class="fa-solid fa-angle-left text-2xl"></i>
-      </button>
-      <h3 class="text-black font-bold">AYUDA</h3>
-    </div>
-  </div>
   <div class="flex flex-col w-full mt-20 py-4 px-2">
     <!-- buscador -->
     <form action="" class="flex flex-col w-full gap-y-6">
