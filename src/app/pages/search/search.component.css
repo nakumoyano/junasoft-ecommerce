@@ -1,0 +1,33 @@
+.flex {
+    display: flex;
+    /* Utiliza flexbox para disposición */
+}
+
+.w-full {
+    width: 100%;
+    /* Ancho completo */
+}
+
+.max-w-screen-md {
+    max-width: 100%;
+    /* Asegúrate de que el máximo ancho sea el de la pantalla */
+}
+
+.p-input-icon-left {
+    width: 100%;
+    /* Asegura que el contenedor del input ocupe el 100% */
+}
+
+input {
+    width: calc(100% - 2.5rem);
+    /* Ajusta el ancho del input para que no desborde */
+    max-width: 100%;
+    /* Previene el desbordamiento */
+    border-radius: 9999px;
+    /* Asegúrate de que sea redondeado */
+}
+
+button {
+    z-index: 10;
+    /* Mantiene el botón sobre otros elementos */
+}

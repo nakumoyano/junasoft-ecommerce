@@ -1,44 +1,47 @@
-<!-- <app-sidebar-web></app-sidebar-web> -->
-<div
-  class="max-w-screen-md flex flex-wrap items-center justify-center mx-auto relative"
->
-  <!-- BOTONES DE VOLVER -->
-  <div class="flex absolute top-5 w-full z-50">
-    <!-- BOTON VOLVER -->
-    <div class="flex absolute left-2 top-0 items-center">
-      <button
-        class="text-black px-3 drop-shadow rounded mr-4"
-        (click)="navigateToHome()"
-      >
-        <i class="fa-solid fa-angle-left text-2xl"></i>
-      </button>
-      <!-- BUSCADOR -->
-      <div class="flex w-full mx-2">
-        <!-- Contenedor del input y el icono -->
-        <span class="p-input-icon-left flex flex-grow relative items-center">
-          <!-- Icono de lupa -->
-          <i
-            class="fa fa-search absolute left-4 top-2 text-gray-400 text-xs"
-          ></i>
+<nav class="fixed top-0 w-full z-50">
+  <div class="px-3 py-1 lg:px-5 lg:pl-3">
+    <div class="flex items-center justify-between">
+      <!-- NAVEGADOR -->
+      <div class="flex flex-col gap-4 w-full mt-4">
+        <div class="flex items-center justify-between gap-2 w-full p-0 mx-0">
+          <!-- BOTON MENU -->
+          <button
+            type="button"
+            (click)="navigateToHome()"
+            class="inline-flex items-center py-2 text-sm text-black rounded-lg lg:hidden md:hidden"
+          >
+            <i class="fa-solid fa-angle-left text-2xl"></i>
+          </button>
 
-          <!-- Input con espacio para el icono -->
-          <input
-            type="text"
-            placeholder="Buscar en Junasoft"
-            class="w-full border-none tracking-wide rounded-full pl-10 pr-6 py-2 text-xs placeholder:text-xs"
-          />
-        </span>
+          <!-- BUSCADOR -->
+          <div class="flex w-full mx-2">
+            <!-- Contenedor del input y el icono -->
+            <span
+              class="p-input-icon-left flex flex-grow relative items-center"
+            >
+              <!-- Icono de lupa -->
+              <i
+                class="fa fa-search absolute left-4 top-5 text-gray-400 text-nase"
+              ></i>
+
+              <!-- Input con espacio para el icono -->
+              <input
+                type="text"
+                placeholder="Buscar en Junasoft"
+                class="w-full border-none tracking-wide rounded-full pl-10 pr-6 py-4 text-base placeholder:text-base"
+              />
+            </span>
+          </div>
+        </div>
       </div>
-      <!-- <h3 class="text-black font-bold">AYUDA</h3> -->
     </div>
   </div>
-  <div class="flex flex-col w-full mt-20 py-4 px-2 text-center">
-    <img
-      src="./assets/search/sinResultado.png"
-      class
-      alt="No hay resultados"
-      class=""
-    />
-    <h2 class="text-gray-400">No hay resultados</h2>
-  </div>
+</nav>
+<div class="flex flex-col w-full mt-20 py-4 px-2 text-center">
+  <img
+    src="./assets/search/sinResultado.png"
+    alt="No hay resultados"
+    class=""
+  />
+  <h2 class="text-gray-400">¡Realizá tu primer búsqueda!</h2>
 </div>
